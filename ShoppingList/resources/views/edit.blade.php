@@ -16,7 +16,7 @@
         @csrf
         <input type="text" name="list" value={{$data->items}}>
         <input type="hidden" name="id" value={{$data->id}}>
-        <button type="submit" name=""></button>
+        <button type="submit" name="update">Update</button>
     </form>
 </body>
 </html>

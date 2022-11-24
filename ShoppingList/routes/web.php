@@ -22,7 +22,7 @@ Route::get('/', function () {
 Route::get('/', [ShoppingListController::class, 'index']);
 Route::get('/delete/{id}', [ShoppingListController::class, 'delete']);
 Route::get('/edit/{id}', [ShoppingListController::class, 'edit']);
-Route::post('/update-list', [ShoppingListController::class, 'updateList'])-> name('updateList');
+Route::post('/edit', [ShoppingListController::class, 'updateList'])-> name('updateList');
 
 
 Route::post('/save-list' , [ShoppingListController::class, 'saveList'])-> name('saveList');
